@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,4 +21,15 @@ public class GameAssets : MonoBehaviour
 
     public Transform pfPipeBody;
     public Transform pfPipeHead;
+    public Transform pfGround;
+    
+
+    public SoundAudioClip[] soundAudioClipArray; 
+
+    [Serializable]
+    public class SoundAudioClip
+    {
+        public SoundManager.Sound sound;
+        public AudioClip audioClip;
+    }
 }
